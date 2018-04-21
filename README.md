@@ -12,7 +12,7 @@ To make it work, just add your ssh key (`id_rsa.pub`) inside this repository dir
 `docker build . -t dreamcast`.
 
 To daemonize the repository, just run :
-`./daemon.ssh`
+`./daemon.sh`
 
 You can now login using `ssh root@localhost -p 3022` !
 
