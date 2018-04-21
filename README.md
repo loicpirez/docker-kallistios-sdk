@@ -2,6 +2,17 @@
 This image provides a full powered [KallistiOS](http://gamedev.allusion.net/softprj/kos/) SDK for Developing Homebrew for the Sega Dreamcast.
 It has been build, so you don't have to compile/setup the KOS-Toolchain yourself & keep your system clean. If you have Docker installed on your system - it's like one command to compile your code using KOS!
 
+## About remote branch
+
+I forked this repo as I needed to make it work with my IDE.
+As a solution, I added support for SSH login inside this container.
+To make it work, just add your ssh key (`id_rsa.pub`) inside this repository directory and then run
+`docker build . -t dreamcast`.
+To daemonize the repository, just run :
+`./daemon.ssh`
+You can now login using `ssh root@localhost -p 3022` !
+Happy coding !
+
 ## Image Tags & Included Software
 |nold360/kallistios-sdk:minimal|
 |---|
